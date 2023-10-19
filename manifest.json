@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0.0",
+  "description": "A plain text description 2",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "run-foo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Run \"foo\" on the current page."
+    }
+  },
+  "action": {
+    "default_title": "Click Me"
+  },
+  "minimum_chrome_version": "87",
+  "permissions": ["scripting", "activeTab", "tabs", "debugger", "activeTab", "storage", "unlimitedStorage", "nativeMessaging"],
+  "host_permissions": [
+    "*://*.ubs.com/*",
+    "*://*.google.com/*",
+    "*://*.chrome.com/*",
+    "*://*.github.com/*",
+    "*://*.react.dev/*"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0.0",
+  "description": "A plain text description 2",
+  "permissions": ["webRequest", "scripting", "activeTab", "tabs"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+U",
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    }
+  },
+  "host_permissions": [
+    "*://*.ubs.com/*",
+    "*://*.google.com/*",
+    "*://*.chrome.com/*",
+    "*://*.github.com/*",
+    "*://*.react.dev/*"
+  ]
+}
